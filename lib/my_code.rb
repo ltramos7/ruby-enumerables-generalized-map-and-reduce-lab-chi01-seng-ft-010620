@@ -23,7 +23,7 @@ def reduce (list,sv=nil)
   end
 
   while i < list.length
-    sum = sum + list[i]
+    sum = yield(sum, list[i])
     i += 1
   end
   sum
