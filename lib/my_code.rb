@@ -13,10 +13,13 @@ end
 
 
 def reduce (list,sv=nil)
-  sum = 0
-  i = 0
+
   if (sv)
     sum = sv
+    i=0
+  else
+    sum = list[0]
+    i=1
   end
 
   while i < list.length
