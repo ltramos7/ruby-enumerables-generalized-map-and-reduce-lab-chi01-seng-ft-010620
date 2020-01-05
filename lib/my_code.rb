@@ -1,7 +1,9 @@
 # Your Code Here
-# def map (array) 
-  
-# end
+def map (array) 
+  i=0
+  while i < array.length
+  array[i]= yield
+end
 
 def reduce (list,sv=nil)
   sum = 0
