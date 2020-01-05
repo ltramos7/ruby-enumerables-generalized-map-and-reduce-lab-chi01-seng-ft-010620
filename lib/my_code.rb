@@ -1,9 +1,16 @@
 # Your Code Here
 def map (array) 
   i=0
+  new_array = []
   while i < array.length
-  array[i]= yield
+    new_array << yield (array[i]) 
+    i += 1 
+  end
+  new_array
 end
+
+
+
 
 def reduce (list,sv=nil)
   sum = 0
